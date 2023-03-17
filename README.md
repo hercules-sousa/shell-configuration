@@ -18,7 +18,7 @@ chsh -s $(which zsh)
 
 - O comando `chsh` é usado para mudar o terminal padrão que será utilizado pelo usuário.
 - A flag `-s` é usada para especificar o novo terminal padrão.
-- O comando `$(which zsh)` procura o caminho completo do arquivo executável do zsh e o passa como um argumento para a flag anterior.
+- O comando `$(which zsh)` procura o caminho completo do arquivo executável do ZSH e o passa como um argumento para a flag anterior.
 
 ## Instalado OH MY ZSH
 
@@ -68,4 +68,25 @@ Altere o tema para:
 ZSH_THEME="spaceship"
 ```
 
-### Instalado o tema Dracula
+## Instalado o tema Dracula 🟡
+
+Para realizar a instalação desse tema nós podemos seguir o guia que está na [documentação oficial](https://draculatheme.com/gnome-terminal).
+
+Para isso vamos precisar do comando dconf que pode ser instalado com:
+
+```bash
+sudo apt-get install dconf-cli
+```
+
+Após a instalação do comando vamos clonar o repositório do gnome terminal na nossa máquina.
+
+```bash
+git clone https://github.com/dracula/gnome-terminal
+cd gnome-terminal
+```
+
+Por fim, vamos rodar o script de instalação.
+
+```bash
+./install.sh
+```
